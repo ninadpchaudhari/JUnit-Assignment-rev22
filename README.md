@@ -4,7 +4,8 @@
 The Repository contains a maven project with queue extended from [Princeton's Intro to programming](https://introcs.cs.princeton.edu/java/43stack/) sample.
 
 *The problem:* The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
-*Task*: As a Software Tester, Write junit test cases for this project to reveal
+
+*The Task*: As a Software Tester, Write junit test cases for this project to reveal
 this fault and also to test all functions of the Queue Class which should result
 in 100% code coverage for this class.
 #### Current code coverage: 
