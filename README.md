@@ -14,14 +14,15 @@ Create Unit test cases for the code in this repository. The tests should have 10
 **Upload Results** Copy the code coverage report and attach the same with your submission.
 
 
-## Task 2:  Create Test case that *fails* revealing the underlying fault
+### Task 2:  Create Test case that *fails* revealing the underlying fault
 Write a test case which exercises the program to find the fault in the dequeue method. 
 Bug : The class does not throw an exception when dequeue function is called on an empty queue. Remember the intended behaviour of the dequeue method in a queue data-structure is throw an exception if it is called on a queue is empty. You find the problem is that: someone commented a part of your code (Line 147 & 148) after you pushed the same.
 
-**Task 2**: 
-> Note: after writing this test case, 
+**Note** after writing this test case: 
+
 > mvn test
-> will state that one of your test case is failing
+
+will state that one of your test case is failing
 
 Hint : Your test case would expect a NoSuchElementException, but that is not thrown hence this test case will make your mvn test fail, and this the expected behaviour.
 
@@ -36,7 +37,7 @@ Hint : Your test case would expect a NoSuchElementException, but that is not thr
 
 * Have 100% instruction & branch coverage for both constructors, enqueue, dequeue, peek, length, isEmpty, removeAll for Queue Class.
 
-* Order of test execution cannot be manually set. Tests can be run indepedenly of each other.
+* Screenshots obtained from Task1 and Task2
 * Annotations of JUnit are to be used.
 * You should have atleast 1 failing test which reveals the bug in the enqueue method disclosed earlier.
 ## Instructions for submission
