@@ -111,8 +111,11 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Add the item to the queue.
+     * 
      */
     public void enqueue(Item item) {
+        if (this.n == this.maxLength)
+            throw new RuntimeException("Maximum Size of queue reached, cannot add more.");
         Node oldlast = last;
         last = new Node();
         last.item = item;
@@ -131,8 +134,17 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
-        if (isEmpty())
-            throw new NoSuchElementException("Queue underflow");
+        // !!!!!!!!!!!!!!!!
+        // This part was commented by someone in your team
+        // which caused the bug.!!!!!!!!!!!
+        // !!!!!!!!!!!!!!!!
+        //
+        // if (isEmpty())
+        // throw new NoSuchElementException("Queue underflow");
+        //
+        // !!!!!!!!!!!!!!!!
+        // End
+        // !!!!!!!!!!!!!!!!
         Item item = first.item;
         first = first.next;
         n--;
@@ -198,7 +210,7 @@ public class Queue<Item> implements Iterable<Item> {
      */
     public static void main(String[] args) {
         Queue<String> queue = new Queue<String>();
-        System.out.println(queue.dequeue());
+        // System.out.println(queue.dequeue());
         System.out.println("(" + queue.size() + " left on queue)");
     }
 }

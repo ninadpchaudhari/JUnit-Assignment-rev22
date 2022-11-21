@@ -2,7 +2,10 @@ package sampleQueue;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.NoSuchElementException;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +13,6 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-
 
 class QueueTest {
 
@@ -20,7 +22,6 @@ class QueueTest {
 
 	private static final String SOME_ITEM = "some-content";
 	private Queue<String> q;
-
 
 	@Test
 	@Disabled
@@ -38,6 +39,11 @@ class QueueTest {
 	@DisplayName("Verify Queue isEmpty when queue is initialized")
 	void isEmptyShouldGiveTrueOnQueueInit() {
 		assertTrue(q.isEmpty());
+	}
+	@Test
+	@DisplayName("Peek should throw an Exception if called on empty queue")
+	void peekThrowsExceptionOnEmpty(){
+		assertThrows(NoSuchElementException.class, () -> this.q.peek());
 	}
 
 	//Example of Wrong Test! 
