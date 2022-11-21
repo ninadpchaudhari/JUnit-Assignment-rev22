@@ -3,10 +3,18 @@
 
 The Repository contains a maven project with queue extended from [Princeton's Intro to programming](https://introcs.cs.princeton.edu/java/43stack/) sample.
 
-*The problem: * The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
+*The problem:* The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
+*Task*: As a Software Tester, Write junit test cases for this project to reveal
+this fault and also to test all functions of the Queue Class which should result
+in 100% code coverage for this class.
+#### Current code coverage: 
+![Instructions Coverage](.github/badges/jacoco.svg "Instructions Coverage Jacoco")
+![Branch Coverage](.github/badges/branches.svg "Branch Coverage Jacoco")
+
 ## Requirements for assignment
 
-* Have 100% instruction & branch coverage for both constructors, enqueue, dequeue, peek, length, isEmpty, removeAll for Queue Class
+* Have 100% instruction & branch coverage for both constructors, enqueue, dequeue, peek, length, isEmpty, removeAll for Queue Class.
+
 * Order of test execution cannot be manually set. Tests can be run indepedenly of each other.
 * Annotations of JUnit are to be used.
 * You should have atleast 1 failing test which reveals the bug in the enqueue method disclosed earlier.
@@ -14,10 +22,6 @@ The Repository contains a maven project with queue extended from [Princeton's I
 
 * This repo should already exist as a base code in your particular Github Classroom repositories, push your changes to your respective repositories.
 * Submit a compressed file of the entire project which contain the reports already generated.
-## Current State of C0 and C1 coverage: 
-![Instructions Coverage](.github/badges/jacoco.svg "Instructions Coverage Jacoco")
-![Branch Coverage](.github/badges/branches.svg "Branch Coverage Jacoco")
-
 ## Instructions to run
 You can check the current code coverage using the following ways:
 ### Checking code coverage on local machine.
