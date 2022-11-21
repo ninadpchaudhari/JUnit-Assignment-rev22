@@ -1,13 +1,26 @@
-
-## Sample Project for JUnit Assignment.
+# Junit Assignment
+## Project Description
 
 The Repository contains a maven project with queue extended from [Princeton's Intro to programming](https://introcs.cs.princeton.edu/java/43stack/) sample.
-The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
+
+*The problem: * The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
+## Requirements for assignment
+
+* Have 100% instruction & branch coverage for both constructors, enqueue, dequeue, peek, length, isEmpty, removeAll for Queue Class
+* Order of test execution cannot be manually set. Tests can be run indepedenly of each other.
+* Annotations of JUnit are to be used.
+* You should have atleast 1 failing test which reveals the bug in the enqueue method disclosed earlier.
+## Instructions for submission
+
+* This repo should already exist as a base code in your particular Github Classroom repositories, push your changes to your respective repositories.
+* Submit a compressed file of the entire project which contain the reports already generated.
 ## Current State of C0 and C1 coverage: 
 ![Instructions Coverage](.github/badges/jacoco.svg "Instructions Coverage Jacoco")
 ![Branch Coverage](.github/badges/branches.svg "Branch Coverage Jacoco")
-#### Instructions to run
 
+## Instructions to run
+You can check the current code coverage using the following ways:
+### Checking code coverage on local machine.
 To Run tests and generate coverage reports :
 
 > mvn jacoco:prepare-agent test jacoco:report
@@ -16,17 +29,13 @@ or just
 * Location of reports : *target/site/jacoco/index.html*
 * [Screenshot of a sample report](https://github.com/ninadpchaudhari/JUnit-Assignment/blob/master/jacoco-report-sample.png?raw=true) 
 
-#### Requirements for assignment
+### Automatic Coverage test: 
+This repo is configured to automatically generate a new commit after you push code online!
+This commit will generate badges reflecting the current test coverage of code.
+You can just push code to github then wait for the github action to finish
+which should update the badges automatically! 
+This helps everyone stay on the same page.
 
-* Have 100% instruction & branch coverage for both constructors, enqueue, dequeue, peek, length, isEmpty, removeAll for Queue Class
-* Order of test execution cannot be manually set. Tests can be run indepedenly of each other.
-* Annotations of JUnit are to be used.
-* You should have atleast 1 failing test which reveals the bug in the enqueue method disclosed earlier.
-
-#### Instructions for submission
-
-* This repo should already exist as a base code in your particular Github Classroom repositories, push your changes to your respective repositories.
-* Submit a compressed file of the entire project which contain the reports already generated.
 
 #### References
 * [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide)
