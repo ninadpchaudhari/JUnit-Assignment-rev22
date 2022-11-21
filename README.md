@@ -1,17 +1,19 @@
 
 ## Sample Project for JUnit Assignment.
-## Deadline : Dec 01, 2019 23:59
 
 The Repository contains a maven project with queue extended from [Princeton's Intro to programming](https://introcs.cs.princeton.edu/java/43stack/) sample.
 The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
-
+## Current State of C0 and C1 coverage: 
+![Instructions Coverage](.github/badges/jacoco.svg "Instructions Coverage Jacoco")
+![Branch Coverage](.github/badges/branches.svg "Branch Coverage Jacoco")
 #### Instructions to run
 
 To Run tests and generate coverage reports :
 
 > mvn jacoco:prepare-agent test jacoco:report
-
-* Location of reports : *target/site/index.html*
+or just 
+> mvn test
+* Location of reports : *target/site/jacoco/index.html*
 * [Screenshot of a sample report](https://github.com/ninadpchaudhari/JUnit-Assignment/blob/master/jacoco-report-sample.png?raw=true) 
 
 #### Requirements for assignment
