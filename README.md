@@ -36,14 +36,16 @@ Hint : Your test case would expect a NoSuchElementException, but that is not thr
 ## Requirements for assignment
 
 * Have 100% instruction & branch coverage for both constructors, enqueue, dequeue, peek, length, isEmpty, removeAll for Queue Class.
-* Screenshots obtained from Task1 and Task2
 * Annotations of JUnit are to be used.
 * Test cases must be complete & should check for expected outcome. (except for the "toString" method). An example would be, after the dequeue method is called on the queue, ensure that the length of the queue decreases by one. Or that when "peek" method is called, the returned value is the expected element.
 * You should have atleast 1 failing test which reveals the bug in the enqueue method disclosed earlier.
-## Instructions for submission
 
-* This repo should already exist as a base code in your particular Github Classroom repositories, push your changes to your respective repositories.
-* Submit a compressed file of the entire project which contain the reports already generated.
+## Required Artifacts:
+Please submit the following on blackboard:
+1. Github Repository link.
+2. Screenshot of instruction coverage after Task 1.
+3. Screenshot of instruction coverage after Task 2.
+4. zip the project folder
 ## Instructions to run
 The project is tested on [adoptium JDK-17 LTS](https://adoptium.net) but any JDK-17 flavour should work just fine.
 This assignment assumes you have knowledge of Java Classes and have a working installation of JDK. P.s. Java-8 might work as well, but is not tested!
