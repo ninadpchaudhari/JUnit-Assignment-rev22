@@ -26,6 +26,8 @@ in 100% code coverage for this class.
 ## Instructions to run
 The project is tested on [adoptium JDK-17 LTS](https://adoptium.net) but any JDK-17 flavour should work just fine.
 This assignment assumes you have knowledge of Java Classes and have a working installation of JDK. P.s. Java-8 might work as well, but is not tested!
+
+
 You can check the current code coverage using the following ways:
 ### Checking code coverage on local machine.
 To Run tests and generate coverage reports :
