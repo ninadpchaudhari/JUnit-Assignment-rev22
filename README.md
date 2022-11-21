@@ -33,7 +33,9 @@ You can check the current code coverage using the following ways:
 To Run tests and generate coverage reports :
 
 > mvn jacoco:prepare-agent test jacoco:report
+
 or just 
+
 > mvn test
 * Location of reports : *target/site/jacoco/index.html*
 * [Screenshot of a sample report](https://github.com/ninadpchaudhari/JUnit-Assignment/blob/master/jacoco-report-sample.png?raw=true) 
