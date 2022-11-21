@@ -36,9 +36,9 @@ Hint : Your test case would expect a NoSuchElementException, but that is not thr
 ## Requirements for assignment
 
 * Have 100% instruction & branch coverage for both constructors, enqueue, dequeue, peek, length, isEmpty, removeAll for Queue Class.
-
 * Screenshots obtained from Task1 and Task2
 * Annotations of JUnit are to be used.
+* Test cases must be complete & should check for expected outcome. (except for the "toString" method). An example would be, after the dequeue method is called on the queue, ensure that the length of the queue decreases by one. Or that when "peek" method is called, the returned value is the expected element.
 * You should have atleast 1 failing test which reveals the bug in the enqueue method disclosed earlier.
 ## Instructions for submission
 
