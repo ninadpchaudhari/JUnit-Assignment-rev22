@@ -3,9 +3,9 @@
 
 The Repository contains a maven project with queue extended from [Princeton's Intro to programming](https://introcs.cs.princeton.edu/java/43stack/) sample.
 
-*The problem:* The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
+**The problem:** The "enqueue" method has a bug : The developer has forgot to throw an exception when the queue is full.
 
-*The Task*: As a Software Tester, Write junit test cases for this project to reveal
+**The Task**: As a Software Tester, Write junit test cases for this project to reveal
 this fault and also to test all functions of the Queue Class which should result
 in 100% code coverage for this class.
 #### Current code coverage: 
@@ -39,6 +39,8 @@ This repo is configured to automatically generate a new commit after you push co
 This commit will generate badges reflecting the current test coverage of code.
 You can just push code to github then wait for the github action to finish
 which should update the badges automatically! 
+
+*Please do `git pull` after the bot has updated your repo with badges*
 This helps everyone stay on the same page.
 
 
