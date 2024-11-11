@@ -45,7 +45,7 @@ Please submit the following on blackboard:
 1. Github Repository link.
 2. Screenshot of instruction coverage after Task 1.
 3. Screenshot of instruction coverage after Task 2.
-4. zip the project folder
+   
 ## Instructions to run
 The project is tested on [adoptium JDK-17 LTS](https://adoptium.net) but any JDK-17 flavour should work just fine.
 This assignment assumes you have knowledge of Java Classes and have a working installation of JDK. P.s. Java-8 might work as well, but is not tested!
